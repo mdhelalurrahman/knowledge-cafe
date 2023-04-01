@@ -3,7 +3,7 @@ import logo from "../../../public/pic.jpg";
 
 const Header = () => {
   return (
-    <div>
+    <div className="px-8">
       <div className="navbar bg-base-100">
         <div className="flex-1">
           <a className="btn btn-ghost normal-case text-xl">Knowledge Cafe</a>

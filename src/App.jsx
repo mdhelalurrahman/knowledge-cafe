@@ -5,8 +5,7 @@ import "./App.css";
 import Header from "./component/Header/Header";
 import Blog from "./component/Blog/Blog";
 import SideCard from "./component/SideCard/SideCard";
-import {ToastContainer, toast} from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import Footer from "./component/Footer/Footer";
 
 function App() {
   const [watchTime, setWatchTime] = useState("");
@@ -32,11 +31,16 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-      <div className="flex justify-between px-10 mt-8">
-        <Blog handlerMark={handlerMark} readMark={readMark}></Blog>
-        <SideCard watchTime={watchTime} read={read}></SideCard>
+      <div className="flex justify-between flex-wrap px-10 mt-8 ">
+        <div>
+          <Blog handlerMark={handlerMark} readMark={readMark}></Blog>
+        </div>
+        <div>
+          <SideCard watchTime={watchTime} read={read}></SideCard>
+        </div>
       </div>
-      <ToastContainer></ToastContainer>
+      {/* <ToastContainer></ToastContainer> */}
+      <Footer></Footer>
     </div>
   );
 }

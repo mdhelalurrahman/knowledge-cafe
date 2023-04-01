@@ -12,7 +12,7 @@ const SideCard = ({watchTime, read}) => {
         <h4>Spent time on read : {time} min</h4>
       </div>
       <div className="mt-6">
-        <h1 className="text-2xl text-white">Bookmarked Blogs: {read.length}</h1>
+        <h1 className="text-2xl">Bookmarked Blogs: {read.length}</h1>
         <div>
           {read.map((r) => (
             <h2

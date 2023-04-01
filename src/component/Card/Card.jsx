@@ -8,8 +8,8 @@ const Card = ({handlerMark, card, readMark}) => {
           <img src={card.img} alt="" />
         </figure>
         <div className="card-body">
-          <div className="flex justify-between">
-            <div className="flex ">
+          <div className="flex  justify-between">
+            <div className="flex flex-wrap ">
               <div>
                 <img
                   className="w-10 h-10 rounded-full"
@@ -22,7 +22,7 @@ const Card = ({handlerMark, card, readMark}) => {
                 <p>{card.date}</p>
               </div>
             </div>
-            <div className="flex items-center">
+            <div className="flex  items-center">
               <p>{card.ratings} min read</p>
               <button onClick={() => readMark(card)}>
                 <svg
